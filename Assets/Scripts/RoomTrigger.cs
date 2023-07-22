@@ -12,6 +12,7 @@ public class RoomTrigger : MonoBehaviour
 
     [SerializeField] CameraFollow camFollow;
 
+
     private void Start()
     {
         camFollow = Camera.main.GetComponent<CameraFollow>();
@@ -28,9 +29,12 @@ public class RoomTrigger : MonoBehaviour
 
     private void TransitionRoom(Collider2D collision)
     {
+        
         camFollow.minPos += camMinChange;
         camFollow.maxPos += camMaxChange;
 
         collision.transform.position += playerChange;
+
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.useDoorSound, this.transform.position);
     }
 } 

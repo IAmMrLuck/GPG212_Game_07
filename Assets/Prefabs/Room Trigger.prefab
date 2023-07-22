@@ -71,7 +71,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1093995ae94d8ac4ba6ac51260f9177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camMinChange: {x: 0, y: 0}
-  camMaxChange: {x: 0, y: 0}
-  playerChange: {x: 0, y: 0, z: 0}
+  camMinChange: {x: -18, y: 0}
+  camMaxChange: {x: -18, y: 0}
+  playerChange: {x: -2, y: 0, z: 0}
   camFollow: {fileID: 0}
+  useDoorSound:
+    Guid:
+      Data1: -1465850842
+      Data2: 1135016590
+      Data3: 1178519425
+      Data4: -1867851615
+    Path: event:/UseDoor
