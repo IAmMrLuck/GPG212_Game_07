@@ -11,6 +11,8 @@ public class RoomTrigger : MonoBehaviour
     [SerializeField] private CameraFollow camFollow;
     [SerializeField] private string fmodEventName;
 
+    private bool hasSoundPlayed = false;
+
     // Keep track of the active sound event instance for this trigger
     private static EventInstance activeSoundEvent;
 
@@ -24,8 +26,15 @@ public class RoomTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             TransitionRoom(collision);
+            PlayNarration();
+            hasSoundPlayed = true;
+        }
+    }
 
-            // Stop the previously active sound event (if any)
+    private void PlayNarration()
+    {
+        if (hasSoundPlayed == false)
+        {
             if (activeSoundEvent.isValid())
             {
                 activeSoundEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);

@@ -1278,7 +1278,7 @@ GameObject:
   - component: {fileID: 491443192}
   - component: {fileID: 491443191}
   m_Layer: 0
-  m_Name: objects_23
+  m_Name: ChairTwo 1.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1343,13 +1343,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491443190}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.08, y: 29.96, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.11555556, y: -0.0023792267, z: 0}
+  m_LocalScale: {x: 0.05555556, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 910905306}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &513963376
 GameObject:
@@ -1361,7 +1361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513963377}
   m_Layer: 0
-  m_Name: Rooms
+  m_Name: ROOMS=======
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1802,7 +1802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 733433698}
   m_Layer: 0
-  m_Name: Managers
+  m_Name: MANAGERS====
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2191,7 +2191,10 @@ Transform:
   m_LocalPosition: {x: 10.541052, y: 24.7, z: 0.34933892}
   m_LocalScale: {x: 18, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1710682120}
+  - {fileID: 1935115834}
+  - {fileID: 491443192}
   m_Father: {fileID: 513963377}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2816,7 +2819,8 @@ Transform:
   m_LocalPosition: {x: 10.541052, y: 34.7, z: 0.34933892}
   m_LocalScale: {x: 18, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1266394689}
   m_Father: {fileID: 513963377}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3035,7 +3039,7 @@ GameObject:
   - component: {fileID: 1266394689}
   - component: {fileID: 1266394688}
   m_Layer: 0
-  m_Name: objects_68
+  m_Name: Door 1.4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3100,13 +3104,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266394687}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.51, y: 43.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.41722226, y: 0.30862084, z: 0}
+  m_LocalScale: {x: 0.05555556, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1141233595}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1311516420 stripped
 Transform:
@@ -3240,7 +3244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1450688385}
   m_Layer: 0
-  m_Name: Walls
+  m_Name: WALLS=======
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3626,7 +3630,7 @@ GameObject:
   - component: {fileID: 1710682120}
   - component: {fileID: 1710682119}
   m_Layer: 0
-  m_Name: objects_24
+  m_Name: Table 1.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3691,13 +3695,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710682118}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1319704, y: 29.822243, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00733169, y: -0.016154861, z: 0}
+  m_LocalScale: {x: 0.05555556, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 910905306}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1749887897
 GameObject:
@@ -3878,7 +3882,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768061131}
   m_Layer: 0
-  m_Name: Doors
+  m_Name: DOORS=======
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4382,7 +4386,7 @@ GameObject:
   - component: {fileID: 1935115834}
   - component: {fileID: 1935115833}
   m_Layer: 0
-  m_Name: objects_20
+  m_Name: ChairOne 1.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4447,13 +4451,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935115832}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.82, y: 29.92, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1011111, y: -0.0063793184, z: 0}
+  m_LocalScale: {x: 0.05555556, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 910905306}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1940584665
 GameObject:
