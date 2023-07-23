@@ -11,8 +11,10 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference Narration00 { get; private set; }
     [field: SerializeField] public EventReference Narration111 { get; private set; }
     [field: SerializeField] public EventReference Narration112 { get; private set; }
-
-
+    [field: SerializeField] public EventReference Narration211 { get; private set; }
+    [field: SerializeField] public EventReference Narration212 { get; private set; }
+    [field: SerializeField] public EventReference Narration213 { get; private set; }
+    [field: SerializeField] public EventReference Narration214 { get; private set; }
 
 
     [field: Header("Room SFX")]

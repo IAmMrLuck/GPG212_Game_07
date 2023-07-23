@@ -7,12 +7,12 @@ using System.Reflection;
 
 public class EventTrigger : MonoBehaviour
 {
-    private bool atComputer = false;
+    private bool atInteractableObject = false;
     [SerializeField] private string methodToCall;
 
     private void Update()
     {
-        if (atComputer == true && Input.GetKeyDown(KeyCode.E))
+        if (atInteractableObject == true && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Pressed E in Trigger");
 
@@ -34,19 +34,27 @@ public class EventTrigger : MonoBehaviour
         }
     }
 
-    private void PlayComputerNarration()
-    {
-        NarrationManager.instance.PlayOneShot(FMODEvents.instance.Narration111);
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        atComputer = true;
+        atInteractableObject = true;
         Debug.Log("In the Trigger");
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        atComputer = false;
+        atInteractableObject = false;
     }
+
+    private void PlayComputerNarration()
+    {
+        NarrationManager.instance.PlayOneShot(FMODEvents.instance.Narration111);
+    }
+
+
+    private void PlayNarration223()
+    {
+        NarrationManager.instance.PlayOneShot(FMODEvents.instance.Narration111);
+    }
+
 }

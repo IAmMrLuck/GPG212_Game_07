@@ -1,19 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
-using System.Runtime.CompilerServices;
 using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
+using Unity.VisualScripting.Antlr3.Runtime;
 
 public class RoomTrigger : MonoBehaviour
 {
     [SerializeField] private Vector2 camMinChange;
     [SerializeField] private Vector2 camMaxChange;
-
     [SerializeField] private Vector3 playerChange;
+    [SerializeField] private CameraFollow camFollow;
+    [SerializeField] private string fmodEventName;
 
-    [SerializeField] CameraFollow camFollow;
-
-    [SerializeField] private string methodToCall;
+    // Keep track of the active sound event instance for this trigger
+    private static EventInstance activeSoundEvent;
 
     private void Start()
     {
@@ -22,43 +21,32 @@ public class RoomTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
             TransitionRoom(collision);
-            AudioManager.instance.PlayOneShot(FMODEvents.instance.useDoorSound, this.transform.position);
 
-            if(!string.IsNullOrEmpty(methodToCall))
+            // Stop the previously active sound event (if any)
+            if (activeSoundEvent.isValid())
             {
-                MethodInfo method = GetType().GetMethod(methodToCall, BindingFlags.Instance | BindingFlags.NonPublic);
-                if (method != null)
-                {
-                    method.Invoke(this, null);
-                }
-                else
-                {
-                    Debug.LogError("Method not found: " + methodToCall);
-                }
+                activeSoundEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            }
+
+            activeSoundEvent = RuntimeManager.CreateInstance(fmodEventName);
+
+            if (!string.IsNullOrEmpty(fmodEventName))
+            {
+                activeSoundEvent.set3DAttributes(RuntimeUtils.To3DAttributes(transform.position));
+                activeSoundEvent.start();
+                activeSoundEvent.release();
             }
         }
-
-    }
-
-    private void NoNarration()
-    {
-        return;
     }
 
     private void TransitionRoom(Collider2D collision)
-    {        
+    {
         camFollow.minPos += camMinChange;
         camFollow.maxPos += camMaxChange;
         collision.transform.position += playerChange;
     }
 
-    private void PlayNarration111()
-    {
-        NarrationManager.instance.PlayOneShot(FMODEvents.instance.Narration112);
-
-    }
-
-} 
+}
