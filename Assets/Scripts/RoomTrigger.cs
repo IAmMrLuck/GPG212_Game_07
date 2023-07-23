@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ public class RoomTrigger : MonoBehaviour
 
     [SerializeField] CameraFollow camFollow;
 
+    [SerializeField] private string methodToCall;
 
     private void Start()
     {
@@ -23,18 +25,40 @@ public class RoomTrigger : MonoBehaviour
         if(collision.tag == "Player")
         {
             TransitionRoom(collision);
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.useDoorSound, this.transform.position);
+
+            if(!string.IsNullOrEmpty(methodToCall))
+            {
+                MethodInfo method = GetType().GetMethod(methodToCall, BindingFlags.Instance | BindingFlags.NonPublic);
+                if (method != null)
+                {
+                    method.Invoke(this, null);
+                }
+                else
+                {
+                    Debug.LogError("Method not found: " + methodToCall);
+                }
+            }
         }
 
     }
 
-    private void TransitionRoom(Collider2D collision)
+    private void NoNarration()
     {
-        
+        return;
+    }
+
+    private void TransitionRoom(Collider2D collision)
+    {        
         camFollow.minPos += camMinChange;
         camFollow.maxPos += camMaxChange;
-
         collision.transform.position += playerChange;
-
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.useDoorSound, this.transform.position);
     }
+
+    private void PlayNarration111()
+    {
+        NarrationManager.instance.PlayOneShot(FMODEvents.instance.Narration112);
+
+    }
+
 } 

@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638256604114120424
+  lastModified: 638257080180399392
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -142,13 +142,42 @@ MonoBehaviour:
   - {fileID: -6821233609494186479}
   - {fileID: -2869409362690494497}
   - {fileID: -5804778798931482456}
+  - {fileID: 808981039327487865}
+  - {fileID: 7909982947157576207}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6090148081230076256}
   StringsBanks:
   - {fileID: 6828448379001923366}
-  cacheTime: 638256604114526624
+  cacheTime: 638257080181190253
   cacheVersion: 131605
+--- !u!114 &808981039327487865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Narration/1.1.1 Narration
+  m_EditorClassIdentifier: 
+  Path: event:/Narration/1.1.1 Narration
+  Guid:
+    Data1: -930959843
+    Data2: 1140082919
+    Data3: 1286601358
+    Data4: -1647456827
+  Banks:
+  - {fileID: 5863002456639029346}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5863002456639029346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,10 +193,10 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Narration.bank
   Name: Narration
   StudioPath: bank:/Narration
-  lastModified: 638256604114526624
+  lastModified: 638257080181190253
   FileSizes:
   - Name: Desktop
-    Value: 160416
+    Value: 243552
   Exists: 1
 --- !u!114 &6828448379001923366
 MonoBehaviour:
@@ -184,8 +213,35 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638256604114130416
+  lastModified: 638257080180419357
   FileSizes:
   - Name: Desktop
-    Value: 966
+    Value: 1078
   Exists: 1
+--- !u!114 &7909982947157576207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Narration/1.1.2 Narration
+  m_EditorClassIdentifier: 
+  Path: event:/Narration/1.1.2 Narration
+  Guid:
+    Data1: 1175322512
+    Data2: 1255329707
+    Data3: -777451842
+    Data4: -597254999
+  Banks:
+  - {fileID: 5863002456639029346}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
