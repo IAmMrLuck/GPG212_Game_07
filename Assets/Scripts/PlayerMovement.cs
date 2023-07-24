@@ -15,14 +15,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Input handling
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        MovePlayer();
+    }
 
-        // Calculate movement vector
+    private void MovePlayer()
+    {
+        float horizontalInput = 0f;
+        float verticalInput = 0f;
+
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+            horizontalInput = -1f;
+        else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+            horizontalInput = 1f;
+
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+            verticalInput = -1f;
+        else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+            verticalInput = 1f;
+
         Vector2 movement = new Vector2(horizontalInput, verticalInput).normalized * moveSpeed * Time.fixedDeltaTime;
 
-        // Apply movement to the rigidbody
         rb.MovePosition(rb.position + movement);
     }
 }
