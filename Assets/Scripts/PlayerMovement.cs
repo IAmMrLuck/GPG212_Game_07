@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
-
+    public static bool hasKey = false;
     private Rigidbody2D rb;
 
     private void Awake()
@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
     }
+
 
     private void MovePlayer()
     {
