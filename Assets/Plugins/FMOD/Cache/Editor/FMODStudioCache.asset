@@ -54,6 +54,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 14688
+--- !u!114 &-6726136175314954530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638260455050275867
+  FileSizes:
+  - Name: Desktop
+    Value: 2027840
+  Exists: 1
 --- !u!114 &-6090148081230076256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +89,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638259704225612291
+  lastModified: 638260454405553922
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -273,6 +293,7 @@ MonoBehaviour:
   - {fileID: -6090148081230076256}
   - {fileID: -2219785089076103911}
   - {fileID: 5863002456639029346}
+  - {fileID: -6726136175314954530}
   EditorEvents:
   - {fileID: -6821233609494186479}
   - {fileID: -2869409362690494497}
@@ -290,12 +311,13 @@ MonoBehaviour:
   - {fileID: 5207158020045245546}
   - {fileID: 8185075134264464584}
   - {fileID: -5445512029254252911}
+  - {fileID: 2407848947854343116}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6090148081230076256}
   StringsBanks:
   - {fileID: 6828448379001923366}
-  cacheTime: 638259704225915616
+  cacheTime: 638260455050275867
   cacheVersion: 131605
 --- !u!114 &808981039327487865
 MonoBehaviour:
@@ -324,6 +346,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &2407848947854343116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BackgroundMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BackgroundMusic
+  Guid:
+    Data1: 2074520088
+    Data2: 1167336188
+    Data3: -1796569722
+    Data4: -1149067152
+  Banks:
+  - {fileID: -6726136175314954530}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 178076
 --- !u!114 &3936734834003253688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,10 +516,10 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638259704225625730
+  lastModified: 638260454405569007
   FileSizes:
   - Name: Desktop
-    Value: 1600
+    Value: 1700
   Exists: 1
 --- !u!114 &7162878598692798742
 MonoBehaviour:

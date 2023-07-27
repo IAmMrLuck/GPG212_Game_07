@@ -17,6 +17,11 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference Narration214 { get; private set; }
 
 
+    [field: Header("Music")]
+
+
+    [field: SerializeField] public EventReference BackGroundMusic { get; private set; }
+
     [field: Header("Room SFX")]
 
     [field: SerializeField] public EventReference useDoorSound { get; private set; }

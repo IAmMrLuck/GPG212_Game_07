@@ -4994,6 +4994,13 @@ MonoBehaviour:
       Data3: 1766835595
       Data4: -153280714
     Path: event:/Narration/2.1.4 Narration
+  <BackGroundMusic>k__BackingField:
+    Guid:
+      Data1: 2074520088
+      Data2: 1167336188
+      Data3: -1796569722
+      Data4: -1149067152
+    Path: event:/Music/BackgroundMusic
   <useDoorSound>k__BackingField:
     Guid:
       Data1: -1465850842
