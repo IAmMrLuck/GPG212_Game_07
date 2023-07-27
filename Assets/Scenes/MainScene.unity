@@ -989,7 +989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 983131124789073321, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: fmodEventName
-      value: event:/Narration/00 Narration
+      value: event:/Narration/StartingRoom
       objectReference: {fileID: 0}
     - target: {fileID: 983131124789073321, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: camMaxChange.x
@@ -3539,8 +3539,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5567636368749695605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_Name
+      value: DoorEnding
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567636368749695605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097121925790691605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_Size.x
+      value: 6.6664624
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097121925790691605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_Offset.x
+      value: -2.8332312
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363555094369099643, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363555094369099643, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
@@ -5772,6 +5792,13 @@ MonoBehaviour:
       Data3: -214256993
       Data4: 829256199
     Path: event:/Narration/Ending_02
+  <Intro>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <Narration111>k__BackingField:
     Guid:
       Data1: -930959843
@@ -6937,7 +6964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5567636368749695605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
       propertyPath: m_Name
-      value: Room Trigger 1.4 - 1.3
+      value: PortalTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8097121925790691605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
       propertyPath: m_Size.x
@@ -8617,6 +8644,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 711022923130987494, guid: 0e58aeed2a54d85479862a627a47ca26, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e58aeed2a54d85479862a627a47ca26, type: 3}
 --- !u!1001 &940071468489037658
@@ -8841,6 +8872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door 3.1 -3.2
       objectReference: {fileID: 0}
+    - target: {fileID: 2924769614939564775, guid: a3ccd28a40bcffe458eb4a72691af0b3, type: 3}
+      propertyPath: fmodEventName
+      value: event:/Narration/Ending_02
+      objectReference: {fileID: 0}
     - target: {fileID: 3741998981423263223, guid: a3ccd28a40bcffe458eb4a72691af0b3, type: 3}
       propertyPath: m_Name
       value: Room Trigger 3.1 - 3.2
@@ -8892,6 +8927,30 @@ PrefabInstance:
     - target: {fileID: 4624768241843170802, guid: a3ccd28a40bcffe458eb4a72691af0b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370088251726835262, guid: a3ccd28a40bcffe458eb4a72691af0b3, type: 3}
+      propertyPath: m_Size.x
+      value: 7.913763
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370088251726835262, guid: a3ccd28a40bcffe458eb4a72691af0b3, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8875817
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370088251726835262, guid: a3ccd28a40bcffe458eb4a72691af0b3, type: 3}
+      propertyPath: m_Offset.x
+      value: 3.456882
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370088251726835262, guid: a3ccd28a40bcffe458eb4a72691af0b3, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.056209162
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640709338779451472, guid: a3ccd28a40bcffe458eb4a72691af0b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640709338779451472, guid: a3ccd28a40bcffe458eb4a72691af0b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.55
       objectReference: {fileID: 0}
     - target: {fileID: 7313264398750567774, guid: a3ccd28a40bcffe458eb4a72691af0b3, type: 3}
       propertyPath: m_Name

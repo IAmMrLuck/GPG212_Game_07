@@ -89,7 +89,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638261255622659696
+  lastModified: 638261273371367848
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -344,12 +344,14 @@ MonoBehaviour:
   - {fileID: 2578050333260182566}
   - {fileID: -5009533257569398864}
   - {fileID: 2895766282041205919}
+  - {fileID: 8832132314903108979}
+  - {fileID: 3940187412920476811}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6090148081230076256}
   StringsBanks:
   - {fileID: 6828448379001923366}
-  cacheTime: 638261255625725128
+  cacheTime: 638261273372806276
   cacheVersion: 131605
 --- !u!114 &808981039327487865
 MonoBehaviour:
@@ -513,6 +515,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3940187412920476811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Narration/Ending_01
+  m_EditorClassIdentifier: 
+  Path: event:/Narration/Ending_01
+  Guid:
+    Data1: -2027989446
+    Data2: 1188284159
+    Data3: 239434422
+    Data4: -1336291586
+  Banks:
+  - {fileID: 5863002456639029346}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4612716135567007592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,10 +638,10 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Narration.bank
   Name: Narration
   StudioPath: bank:/Narration
-  lastModified: 638261255625725128
+  lastModified: 638261273372806276
   FileSizes:
   - Name: Desktop
-    Value: 1136608
+    Value: 1305184
   Exists: 1
 --- !u!114 &6828448379001923366
 MonoBehaviour:
@@ -629,10 +658,10 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638261255622694685
+  lastModified: 638261273371387821
   FileSizes:
   - Name: Desktop
-    Value: 1914
+    Value: 1988
   Exists: 1
 --- !u!114 &7162878598692798742
 MonoBehaviour:
@@ -736,6 +765,33 @@ MonoBehaviour:
   Banks:
   - {fileID: 5863002456639029346}
   IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8832132314903108979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Narration/StartingRoom
+  m_EditorClassIdentifier: 
+  Path: event:/Narration/StartingRoom
+  Guid:
+    Data1: 1599910623
+    Data2: 1253668945
+    Data3: 336591488
+    Data4: -1561502425
+  Banks:
+  - {fileID: 5863002456639029346}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
