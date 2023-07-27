@@ -5,7 +5,7 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     [SerializeField] private GameObject panelToShow;
-    [SerializeField] private GameObject thisGameObject;
+    private GameObject grabbedObjet;
     public Transform placeToHoldObject;
     private bool isCloseToObject = false;
     [SerializeField] private KeyCode pickUpKeyCode;
@@ -19,21 +19,16 @@ public class Key : MonoBehaviour
 
     private void Update()
     {
-        if (isHoldingObject == false && isCloseToObject == true && Input.GetKey(pickUpKeyCode))
+        if(isHoldingObject == false)
         {
-            Debug.Log("CloseToObject true and E Pressed");
-            isHoldingObject = true;
-            PlayerMovement.hasKey = true;
-            thisGameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-            thisGameObject.transform.position = placeToHoldObject.position;
-            thisGameObject.transform.SetParent(transform);
-        }
-
-        else if (isHoldingObject == true && Input.GetKey(pickUpKeyCode))
-        {
-            thisGameObject.GetComponent<Rigidbody2D>().isKinematic = false;
-            thisGameObject.transform.SetParent(null);
-
+            if (isCloseToObject == true && Input.GetKey(pickUpKeyCode))
+            {
+                Debug.Log("CloseToObject true and E Pressed");
+                isHoldingObject = true;
+                PlayerMovement.hasKey = true;
+                grabbedObjet.transform.position = placeToHoldObject.position;
+                grabbedObjet.transform.SetParent(transform);
+            }
         }
     }
 

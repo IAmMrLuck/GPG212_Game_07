@@ -19,10 +19,7 @@ public class NarrationManager : MonoBehaviour
         instance = this; 
     }
 
-    private void Start()
-    {
-        PlayOneShot(FMODEvents.instance.Narration00);
-    }
+  
 
     public void PlayOneShot(EventReference eventReference)
     {

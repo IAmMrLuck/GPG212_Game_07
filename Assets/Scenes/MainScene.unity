@@ -856,7 +856,6 @@ GameObject:
   m_Component:
   - component: {fileID: 246993970}
   - component: {fileID: 246993971}
-  - component: {fileID: 246993972}
   - component: {fileID: 246993973}
   - component: {fileID: 246993974}
   m_Layer: 0
@@ -933,19 +932,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &246993972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246993969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4889bd4a8005605429c479a5b2c70d5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  methodToCall: PlayNarration223
 --- !u!61 &246993973
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -981,11 +967,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 246993969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e03d251033836043a9aa2aabc624781, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bb09b6c802dc02449565924633026ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelToLoad: {fileID: 206849838}
   sceneToLoad: Ending_02
-  waitTime: 5
 --- !u!1001 &289566917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1002,16 +988,20 @@ PrefabInstance:
       value: NoNarration
       objectReference: {fileID: 0}
     - target: {fileID: 983131124789073321, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
+      propertyPath: fmodEventName
+      value: event:/Narration/00 Narration
+      objectReference: {fileID: 0}
+    - target: {fileID: 983131124789073321, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: camMaxChange.x
-      value: 18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 983131124789073321, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: camMinChange.x
-      value: 18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 983131124789073321, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: playerChange.x
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4634197154363290128, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_Name
@@ -1027,11 +1017,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8726462113723940638, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.34
+      value: 15.45
       objectReference: {fileID: 0}
     - target: {fileID: 8726462113723940638, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.07
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8726462113723940638, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1039,19 +1029,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8726462113723940638, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.92387956
       objectReference: {fileID: 0}
     - target: {fileID: 8726462113723940638, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8726462113723940638, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8726462113723940638, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.38268343
       objectReference: {fileID: 0}
     - target: {fileID: 8726462113723940638, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1063,7 +1053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8726462113723940638, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 9031141638531699056, guid: 066a024d11b958e43a697c787ebf451d, type: 3}
       propertyPath: m_IsTrigger
@@ -1407,6 +1397,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 711022923130987417, guid: 0e58aeed2a54d85479862a627a47ca26, type: 3}
   m_PrefabInstance: {fileID: 711022922736894552}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &411394502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411394492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c601f75f0cffd1e449c51724e0600b4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelToShow: {fileID: 206849838}
+  placeToHoldObject: {fileID: 1824976548}
+  pickUpKeyCode: 101
 --- !u!1001 &443636047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2352,7 +2357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 206849838}
-  thisGameObject: {fileID: 0}
   placeToHoldObject: {fileID: 1824976548}
   pickUpKeyCode: 101
 --- !u!61 &640331431
@@ -2962,7 +2966,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Ending_03
-  waitTime: 0
 --- !u!61 &844301055
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5677,13 +5680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b38ae2a43d062449b137301628ed9c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Narration00>k__BackingField:
-    Guid:
-      Data1: -1837597004
-      Data2: 1103891604
-      Data3: 1398261691
-      Data4: 869143085
-    Path: event:/Narration/Narration 0.0
   <Narration111>k__BackingField:
     Guid:
       Data1: -930959843
@@ -6461,7 +6457,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a57d42b6b98319e448a99ae67eacfd2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7867,7 +7863,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2057660663}
   - component: {fileID: 2057660664}
-  - component: {fileID: 2057660665}
   - component: {fileID: 2057660666}
   - component: {fileID: 2057660667}
   m_Layer: 0
@@ -7944,22 +7939,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2057660665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2057660662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c601f75f0cffd1e449c51724e0600b4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelToShow: {fileID: 206849838}
-  thisGameObject: {fileID: 2057660662}
-  placeToHoldObject: {fileID: 1824976548}
-  pickUpKeyCode: 101
 --- !u!61 &2057660666
 BoxCollider2D:
   m_ObjectHideFlags: 0
