@@ -89,7 +89,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638260926869545563
+  lastModified: 638261255622659696
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -169,6 +169,33 @@ MonoBehaviour:
   Banks:
   - {fileID: 5863002456639029346}
   IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5009533257569398864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Narration/Ending_02
+  m_EditorClassIdentifier: 
+  Path: event:/Narration/Ending_02
+  Guid:
+    Data1: 1101434304
+    Data2: 1200157484
+    Data3: -214256993
+    Data4: 829256199
+  Banks:
+  - {fileID: 5863002456639029346}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -314,12 +341,15 @@ MonoBehaviour:
   - {fileID: -6400258882459685882}
   - {fileID: 7767790569318518256}
   - {fileID: 828852135309809634}
+  - {fileID: 2578050333260182566}
+  - {fileID: -5009533257569398864}
+  - {fileID: 2895766282041205919}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6090148081230076256}
   StringsBanks:
   - {fileID: 6828448379001923366}
-  cacheTime: 638260926872044669
+  cacheTime: 638261255625725128
   cacheVersion: 131605
 --- !u!114 &808981039327487865
 MonoBehaviour:
@@ -402,6 +432,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 178076
+--- !u!114 &2578050333260182566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Narration/Intro
+  m_EditorClassIdentifier: 
+  Path: event:/Narration/Intro
+  Guid:
+    Data1: 754790222
+    Data2: 1090616223
+    Data3: 1783622060
+    Data4: -689226729
+  Banks:
+  - {fileID: 5863002456639029346}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2895766282041205919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Narration/Ending_03
+  m_EditorClassIdentifier: 
+  Path: event:/Narration/Ending_03
+  Guid:
+    Data1: 174926591
+    Data2: 1340264297
+    Data3: 166872499
+    Data4: 440532411
+  Banks:
+  - {fileID: 5863002456639029346}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &3936734834003253688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,10 +609,10 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Narration.bank
   Name: Narration
   StudioPath: bank:/Narration
-  lastModified: 638260771539822329
+  lastModified: 638261255625725128
   FileSizes:
   - Name: Desktop
-    Value: 787328
+    Value: 1136608
   Exists: 1
 --- !u!114 &6828448379001923366
 MonoBehaviour:
@@ -545,10 +629,10 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638260926869595419
+  lastModified: 638261255622694685
   FileSizes:
   - Name: Desktop
-    Value: 1794
+    Value: 1914
   Exists: 1
 --- !u!114 &7162878598692798742
 MonoBehaviour:

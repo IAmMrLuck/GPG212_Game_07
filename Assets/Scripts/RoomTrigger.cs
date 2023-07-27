@@ -25,6 +25,7 @@ public class RoomTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.useDoorSound, this.transform.position);
             TransitionRoom(collision);
             PlayNarration();
             hasSoundPlayed = true;

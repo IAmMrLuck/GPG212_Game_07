@@ -50,10 +50,4 @@ public class EventTrigger : MonoBehaviour
         NarrationManager.instance.PlayOneShot(FMODEvents.instance.Narration111);
     }
 
-
-    private void PlayNarration223()
-    {
-        NarrationManager.instance.PlayOneShot(FMODEvents.instance.Narration111);
-    }
-
 }

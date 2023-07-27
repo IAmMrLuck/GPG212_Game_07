@@ -25,6 +25,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         InitialiseMusic(FMODEvents.instance.BackGroundMusic);
+        PlayOneShot(FMODEvents.instance.Intro, this.transform.position);
     }
 
     private void InitialiseMusic(EventReference musicEventReference)

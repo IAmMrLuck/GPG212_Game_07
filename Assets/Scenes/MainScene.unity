@@ -5765,6 +5765,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b38ae2a43d062449b137301628ed9c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Ending02>k__BackingField:
+    Guid:
+      Data1: 1101434304
+      Data2: 1200157484
+      Data3: -214256993
+      Data4: 829256199
+    Path: event:/Narration/Ending_02
   <Narration111>k__BackingField:
     Guid:
       Data1: -930959843
@@ -6848,6 +6855,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1768061131}
     m_Modifications:
+    - target: {fileID: 49265308778821068, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: camFollow
+      value: 
+      objectReference: {fileID: 519420034}
+    - target: {fileID: 49265308778821068, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: fmodEventName
+      value: event:/Narration/Ending_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 49265308778821068, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: camMaxChange.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 49265308778821068, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: camMinChange.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 49265308778821068, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: playerChange.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 49265308907848042, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
       propertyPath: camFollow
       value: 
@@ -6911,6 +6938,42 @@ PrefabInstance:
     - target: {fileID: 5567636368749695605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
       propertyPath: m_Name
       value: Room Trigger 1.4 - 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097121925790691605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_Size.x
+      value: 5.113556
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097121925790691605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.834893
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097121925790691605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_Offset.x
+      value: -2.056778
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097121925790691605, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06440592
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363555094369099643, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363555094369099643, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -34.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363555094369099643, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363555094369099643, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363555094369099643, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d04f52b26d281a44a088042ff3f383d, type: 3}

@@ -8,6 +8,11 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("Narration")]
 
+
+    [field: SerializeField] public EventReference Ending02 { get; private set; }
+    [field: SerializeField] public EventReference Intro { get; private set; }
+
+
     [field: SerializeField] public EventReference Narration111 { get; private set; }
     [field: SerializeField] public EventReference Narration112 { get; private set; }
     [field: SerializeField] public EventReference Narration211 { get; private set; }
