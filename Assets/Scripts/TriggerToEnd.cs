@@ -14,6 +14,6 @@ public class TriggerToEnd : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SceneManager.LoadScene(sceneToLoad);
-
+        NarrationManager.instance.PlayOneShot(FMODEvents.instance.Narration111);
     }
 }

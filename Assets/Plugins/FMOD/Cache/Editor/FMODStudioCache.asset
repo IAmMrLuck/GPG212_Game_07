@@ -89,7 +89,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638260771538372938
+  lastModified: 638260926869545563
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -244,10 +244,10 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638256604114345552
+  lastModified: 638260926872044669
   FileSizes:
   - Name: Desktop
-    Value: 20288
+    Value: 154560
   Exists: 1
 --- !u!114 &-687707042112008318
 MonoBehaviour:
@@ -313,12 +313,13 @@ MonoBehaviour:
   - {fileID: 2407848947854343116}
   - {fileID: -6400258882459685882}
   - {fileID: 7767790569318518256}
+  - {fileID: 828852135309809634}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6090148081230076256}
   StringsBanks:
   - {fileID: 6828448379001923366}
-  cacheTime: 638260771539822329
+  cacheTime: 638260926872044669
   cacheVersion: 131605
 --- !u!114 &808981039327487865
 MonoBehaviour:
@@ -347,6 +348,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &828852135309809634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Portal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Portal
+  Guid:
+    Data1: 672683534
+    Data2: 1106680135
+    Data3: 788587917
+    Data4: 768369865
+  Banks:
+  - {fileID: -2219785089076103911}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12720
 --- !u!114 &2407848947854343116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,10 +545,10 @@ MonoBehaviour:
   Path: ../../../FMOD/Game_07/FMOD Game Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638260771538382909
+  lastModified: 638260926869595419
   FileSizes:
   - Name: Desktop
-    Value: 1756
+    Value: 1794
   Exists: 1
 --- !u!114 &7162878598692798742
 MonoBehaviour:
