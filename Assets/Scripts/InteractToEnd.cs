@@ -30,9 +30,10 @@ public class InteractToEnd : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        atSceneLoadingObject = true;
+
         panelToLoad?.SetActive(true);
 
-        atSceneLoadingObject = true;
         Debug.Log("In the Trigger");
     }
 
